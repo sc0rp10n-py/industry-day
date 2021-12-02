@@ -105,6 +105,15 @@
     padding-left: 10px;
 }
 
+.faculty-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.faculty-div div {
+    width: 25%;
+}
+
 .social-list {
     margin-top: 5rem;
 }
@@ -159,5 +168,13 @@
         height: auto;
         max-width: 150px;
         max-height: 50px;
+    }
+
+    .faculty-div {
+        flex-direction: column;
+    }
+
+    .table-sig {
+        margin-bottom: 20px;
     }
 }
