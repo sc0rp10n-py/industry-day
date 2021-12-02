@@ -21,6 +21,8 @@
 .banner-text h1 {
     font-size: 5rem;
     line-height: 10rem;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .organiser-img {
@@ -44,6 +46,10 @@
     line-height: 5rem;
 }
 
+.schedule-table {
+    width: 100%;
+}
+
 .schedule-table,
 .schedule-table th,
 .schedule-table td {
@@ -61,6 +67,10 @@
     margin: 5px;
 }
 
+.table-micro td, .table-micro th {
+    height: 49px;
+}
+
 .register-div {
     margin-top: 30px;
 }
@@ -76,6 +86,19 @@
 .register-btn:hover {
     background-color: rgb(18, 109, 5);
     color: white;
+}
+
+.faculty-img {
+    border-radius: 5%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.faculty-name {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 .social-list {
