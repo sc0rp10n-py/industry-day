@@ -18,8 +18,8 @@
     width: 100%;
 }
 
-.banner-text p {
-    font-size: 4rem;
+.banner-text h1 {
+    font-size: 5rem;
     line-height: 10rem;
 }
 
@@ -44,6 +44,40 @@
     line-height: 5rem;
 }
 
+.schedule-table,
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.schedule-table thead {
+    margin: 5px;
+}
+
+.register-div {
+    margin-top: 30px;
+}
+
+.register-btn {
+    border: none;
+    border-radius: 50px;
+    color: black;
+    padding: 10px;
+    width: 150px;
+}
+
+.register-btn:hover {
+    background-color: rgb(18, 109, 5);
+    color: white;
+}
+
 .social-list {
     margin-top: 5rem;
 }
@@ -58,8 +92,8 @@
         font-size: 1.5rem;
     }
 
-    .banner-text p {
-        font-size: 2rem;
+    .banner-text h1 {
+        font-size:3rem;
         line-height: 5rem;
     }
 
