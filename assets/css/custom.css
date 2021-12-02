@@ -71,6 +71,10 @@
     height: 49px;
 }
 
+.table-sig td, .table-sig th {
+    height: 47px;
+}
+
 .register-div {
     margin-top: 30px;
 }
@@ -108,6 +112,32 @@
 .social a {
     font-size: 3rem;
     padding: 0 2rem;
+}
+
+.bio-div {
+    height: 100vh;
+}
+
+.bio-section {
+    height: 100vh;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bio-info {
+    margin: 20px;
+    width: 50%;
+}
+
+.affiliation {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
