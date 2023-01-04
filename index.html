@@ -247,7 +247,7 @@
                     <a href="https://iiitd-ac-in.zoom.us/j/99290346381?pwd=L01DUm9TNjZ0aDVmS3Aya281TFlndz09"
                         target="_blank">Zoom</a>
                     <hr style="border: 1px solid black;">
-                    <div class="row d-flex flex-column flex-md-row">
+                    <!-- <div class="row d-flex flex-column flex-md-row">
                         <div class="col-md-6">
                             <table class="schedule-table table-sig">
                                 <thead>Signal Processing & Machine Learning</thead>
@@ -380,11 +380,11 @@
                                     <td><time>2.15-3</time></td>
                                     <td>NXP</td>
                                 </tr>
-                                <!-- <tr>
+                                <tr>
                                     <td>Preet Yadav</td>
                                     <td><time>2.30-3</time></td>
                                     <td>NXP</td>
-                                </tr> -->
+                                </tr>
                                 <tr>
                                     <td><a href="./guru.html">Dr Guru Prasad A S</a></td>
                                     <td><time>3-3.45</time></td>
@@ -405,7 +405,7 @@
                                 </tr>
                             </table>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <!-- /PAGE -->
@@ -421,11 +421,44 @@
                             style="font-size: 3rem; margin-right: 10px;"></i>
                         Registration
                     </h1>
-                    <div class="register-div d-flex justify-content-center align-items-center mx-auto text-center">
+                    <form>
+                        <label>
+                            <input type="radio" name="reg" value="iiitd" onclick="showLunch(true)">
+                            <span>IIIT Delhi Student</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="reg" value="non-iiitd" onclick="showLunch(false)">
+                            <span>Non-IIIT Delhi Student</span>
+                        </label>
+                        <div id="lunch" style="display: none;">
+                            <label>
+                                <input type="radio" name="lunch" value="lunch" onclick="showForm(true)">
+                                <span>Lunch</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="lunch" value="no lunch" onclick="showForm(false)">
+                                <span>Non-Lunch</span>
+                            </label>
+                        </div>
+                        <div>
+                            <a id="non-iiitd-form-link" href="#" style="display: none;">
+                                Non IIITD Form Link
+                            </a>
+                            <br />
+                            <a id="iiitd-form-with-lunch-link" href="#" style="display: none;">
+                                IIITD Form Link with Lunch
+                            </a>
+                            <br />
+                            <a id="iiitd-form-without-lunch-link" href="#" style="display: none;">
+                                IIITD Form Link without Lunch
+                            </a>
+                        </div>
+                    </form>
+                    <!-- <div class="register-div d-flex justify-content-center align-items-center mx-auto text-center">
                         <a
                             href="https://docs.google.com/forms/d/1fzUY5SQ5OrFmCmP-c1vfw9WWRN7RNipGImyiw7D8xTg/viewform?edit_requested=true"><button
                                 class="register-btn">Register</button></a>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -631,6 +664,35 @@
                 }
             }
         });
+    </script>
+
+    <script>
+        function showLunch(value) {
+            var x = document.getElementById("lunch");
+            if (value) {
+                var y = document.getElementById("non-iiitd-form-link");
+                y.style.display = "none";
+                x.style.display = "block";
+            } else {
+                var y = document.getElementById("non-iiitd-form-link");
+                y.style.display = "block";
+                x.style.display = "none";
+            }
+        }
+
+        function showForm(value) {
+            if (value) {
+                var x = document.getElementById("iiitd-form-with-lunch-link");
+                var y = document.getElementById("iiitd-form-without-lunch-link");
+                x.style.display = "block";
+                y.style.display = "none";
+            } else {
+                var x = document.getElementById("iiitd-form-with-lunch-link");
+                var y = document.getElementById("iiitd-form-without-lunch-link");
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+        }
     </script>
 
 </body>
