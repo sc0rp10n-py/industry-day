@@ -155,6 +155,11 @@
     font-weight: bold;
 }
 
+.panelists {
+    background-color: skyblue;
+    /* color: white; */
+}
+
 @media screen and (max-width: 1024px) {
     .text-li {
         font-size: 1.5rem;
