@@ -67,6 +67,11 @@
     margin: 5px;
 }
 
+.schedule-table td:hover {
+    background-color: #7ab54f;
+    color: white;
+}
+
 .table-micro td, .table-micro th {
     height: 49px;
 }
@@ -108,11 +113,12 @@
 .faculty-div {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-.faculty-div div {
+/* .faculty-div div {
     width: 25%;
-}
+} */
 
 .social-list {
     margin-top: 5rem;
